@@ -5,9 +5,10 @@ var friends = [
     'Shaggy',
     'Scooby'
 ];
-
-var button = document.getElementById('sing');
-button.addEventListener('click', singSongs);
+document.addEventListener('DOMContentLoaded', function() {
+    var button = document.getElementById('sing');
+    button.addEventListener('click', singSongs);
+});
 function singSongs() {
     for (var f = 0; f < friends.length; f++) {
         var friend = document.createElement('div');

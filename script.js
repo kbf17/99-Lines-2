@@ -22,17 +22,14 @@ function singSongs() {
                 var para = document.createElement('p');
                 var lineMany = document.createTextNode([i] + ' lines of code in the file ' + [i] + ' lines of code; ' + friends[f] + ' strikes one out, clears it all out ' + [(i-1)] + ' lines of code in the file');
                 para.appendChild (lineMany);
-                friend.appendChild (para);
             } else if (i > 1) {
                 var para = document.createElement('p');
                 var lineOne = document.createTextNode([i] + ' lines of code in the file ' + [i] + ' lines of code; ' + friends[f] + ' strikes one out, clears it all out ' + [(i-1)] + ' line of code in the file');
                 para.appendChild (lineOne);
-                friend.appendChild (para);
             } else if (i = 1) {
                 var para = document.createElement('p');
                 var lineZero = document.createTextNode([i] + ' line of code in the file ' + [i] + ' line of code; ' + friends[f] + ' strikes one out, clears it all out, no more lines of code in the file.');
                 para.appendChild (lineZero);
-                friend.appendChild (para);
             }
             friend.appendChild (para);
         }

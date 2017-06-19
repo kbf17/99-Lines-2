@@ -1,0 +1,15 @@
+body {
+  background-color: fuchsia;
+}
+h1 {
+  color: yellow;
+}
+.friend {
+  background-color: lime;
+}
+.friend h3 {
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}

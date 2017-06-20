@@ -19,12 +19,18 @@ function singSongs1() {
         var friendName = document.createTextNode(friends[f]);
         friendTitle.appendChild (friendName);
         friend.appendChild (friendTitle);
-        var singAlone = document.createElement('button');
-        var buttonText = document.createTextNode('Sing it alone!')
-        singAlone.appendChild (buttonText)
+        singAlone.appendChild (buttonText);
+        var singAlone
         friend.appendChild (singAlone);
         document.body.appendChild (friend);
-        singAlone.addEventListener('click', function() {
+    }
+};
+
+var singAlone = document.createElement('button');
+var buttonText = document.createTextNode('Sing it alone!');
+
+singAlone.addEventListener('click', function() {
+    var friendName = document.getElementsByName('h3');
             for ( var i = 99; i > 0; i--) {
                 if (i > 2) {
                     var para = document.createElement('p');
@@ -40,5 +46,4 @@ function singSongs1() {
                     para.appendChild (lineZero);
                 }
             } friend.appendChild (para);
-        })
-}};
+        });
